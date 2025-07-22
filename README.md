@@ -14,7 +14,7 @@ Perfect for students capturing lectures, professionals documenting meetings, doc
 <a href="https://f-droid.org/en/packages/com.module.notelycompose.android">
     <img alt="Get it on F-Droid" height="64" src="https://raw.githubusercontent.com/anwilli5/coin-collection-android-US/main/images/fdroid-repo-badge.png" />
 </a>
-<a href="https://play.google.com/store/apps/details?id=com.module.notelycompose.android">
+<a href="https://play.google.com/store/apps/details?id=com.module.notelycompose.android&hl=en&gl=us">
     <img alt="Get it on Google Play" height="64" src="https://raw.githubusercontent.com/anwilli5/coin-collection-android-US/main/images/google-play-badge.png" />
 </a>
 <a href="https://apps.apple.com/us/app/notely-voice-speech-to-text/id6745835691">
