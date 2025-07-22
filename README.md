@@ -77,7 +77,7 @@ This project uses [Weblate](https://hosted.weblate.org/projects/notelyvoice/) fo
 - **[Kotlin](https://kotlinlang.org/)** - Official programming language for Android development
 - **[Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/)** - UI toolkit for building native applications
 - **[Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)** - For asynchronous programming
-- **[Clean Architecture](https://developer.android.com/topic/architecture)** - Ensures scalability and testability
+- **[Android Architecture](https://developer.android.com/topic/architecture)** - Ensures scalability and testability
 - **[ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)** - Stores and manages UI-related data
 - **[Koin](https://insert-koin.io/docs/quickstart/android/)** - Dependency injection for Android
 - **[Material 3](https://m3.material.io/)** - Design system for modern UI
@@ -87,7 +87,7 @@ This project uses [Weblate](https://hosted.weblate.org/projects/notelyvoice/) fo
 
 ## Architecture
 
-Notely is built with Clean Architecture principles, separating the app into distinct layers:
+Notely is built with Android Architecture principles, separating the app into distinct layers:
 
 - **UI Layer**: Compose UI components
 - **Presentation Layer**: Platform Independent ViewModels
