@@ -1,5 +1,6 @@
 package com.module.notelycompose.notes.presentation.detail
 
+import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
 import androidx.lifecycle.ViewModel
@@ -269,6 +270,7 @@ class TextEditorViewModel(
     }
 
     fun onToggleBold() {
+        normaliseSelection()
         textEditorHelper.toggleFormat(
             currentState = _editorPresentationState.value,
             transform = { it.copy(isBold = !it.isBold) },
@@ -280,6 +282,7 @@ class TextEditorViewModel(
     }
 
     fun onToggleItalic() {
+        normaliseSelection()
         textEditorHelper.toggleFormat(
             currentState = _editorPresentationState.value,
             transform = { it.copy(isItalic = !it.isItalic) },
@@ -291,6 +294,7 @@ class TextEditorViewModel(
     }
 
     fun setTextSize(size: Float) {
+        normaliseSelection()
         textEditorHelper.toggleFormat(
             currentState = _editorPresentationState.value,
             transform = { it.copy(textSize = size) },
@@ -302,6 +306,7 @@ class TextEditorViewModel(
     }
 
     fun onToggleUnderline() {
+        normaliseSelection()
         textEditorHelper.toggleFormat(
             currentState = _editorPresentationState.value,
             transform = { it.copy(isUnderline = !it.isUnderline) },
@@ -314,6 +319,15 @@ class TextEditorViewModel(
 
     private fun refreshSelection() {
         textEditorHelper.refreshSelection(
+            currentState = _editorPresentationState.value,
+            updateState = { newState ->
+                _editorPresentationState.update { newState }
+            }
+        )
+    }
+
+    private fun normaliseSelection() {
+        textEditorHelper.normaliseSelection(
             currentState = _editorPresentationState.value,
             updateState = { newState ->
                 _editorPresentationState.update { newState }
